@@ -1,0 +1,82 @@
+{
+	"START": {
+		"name": "Dimly lit room",
+		"desc": "You wake up in an unfamiliar room. There is a door to your left, right, and behind you.",
+		"exits": [{
+			"exit": "LEFT",
+			"target": "BROOM"
+		}, {
+			"exit": "RIGHT",
+			"target": "HROOM"
+		}, {
+			"exit": "BEHIND",
+			"target": "BIROOM"
+		}],
+		"items": []
+	},
+	"BROOM": {
+		"name": "Bloody Room",
+        "desc": "There is blood everywhere! It seems to be dripping from the ceiling and walls! There are no other doors. You should probably go back!",
+        "exits":[{
+            "exit": "BACK",
+            "target": "START"
+	}],
+	"HROOM": {
+		"name": "Hanging room",
+		"desc": "There is a body hanging from a noose in the center of the room! There also doesn't seem to be a way out. You should go back!",
+		"exits": [{
+			"exit": "BACK",
+			"target": "START"
+		}],
+		"items": []
+	},
+	"BIROOM": {
+		"name": "Bright Room",
+		"desc": "This room is well lit and disturbingly clean. There are doors to your left and right. You can always go back too.",
+		"exits": [{
+			"exit": "BACK",
+			"target": "START"
+		}, {
+			"exit": "LEFT",
+			"target": "BPROOM"
+		}, {
+			"exit": "RIGHT",
+			"target": "DROOM"
+		}],
+		"items": []
+	},
+	"BPROOM": {
+		"name": "Body Part Room",
+		"desc": "You step in a puddle of blood and notice there are dismembered body parts all over the room. There is a door to your right or you could go back!",
+		"exits": [{
+			"exit": "BACK",
+			"target": "BIROOM"
+	},	{
+		"exit": "RIGHT",
+		"target": "GROOM"
+	}],
+	"items": []
+	},
+	"GROOM": {
+		"name": "Good Place",
+		"desc": "You made it! This is the good ending! Great job! Enjoy paradise!"
+	},
+	"DROOM": {
+		"name": "Dark Room",
+		"desc": "It's really hard to see in here, but you notice to your left there is a glowing door or you could always go back.",
+		"exits": [{
+			"exit": "LEFT",
+            "target": "BAROOM"
+        }, {
+            "exit": "BACK",
+            "target": "BIROOM"
+		}],
+		"items": []
+	},
+	"BAROOM": {
+		"name": "Bad Place",
+		"desc": "You messed up kid! Welcome to the Bad place suffering and torture are all you have to look forward to now! Have fun! HAHAHAHA!"
+    },
+		"items":[]
+	}
+}

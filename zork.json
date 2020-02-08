@@ -69,7 +69,7 @@
 			"exit": "ENTER",
 			"target": "KITCH"
 		}, {
-			"exit": "CREEPY",
+			"exit": "CREEPY DOOR",
 			"target": "BASE"
 		}],
 		"items": []
@@ -81,7 +81,7 @@
 			"exit": "EAST",
 			"target": "EHOUS"
 	},	{
-		"exit": "SMOKEY",
+		"exit": "SMOKEY DOOR",
 		"target": "DUNGE"
 	}],
 	"items": []
@@ -115,8 +115,20 @@
 	},
 	"DUNGE": {
 		"name": "Dungeon",
-		"desc": "Something weird happened here!",
-		"exits":[],
+		"desc": "Something weird happened here! Maybe the Glowing Door up ahead will lead to an escape?",
+		"exits":[{
+			"exit": "GLOWING DOOR",
+			"target": "HLLE"
+		}],
+		"items":[]
+	},
+	"HLLE": {
+		"name": "The worst place ever, Hell! Unless you are into that sort of thing. In which case, welcome home!",
+		"desc": "It's pretty hot in here and smells like sulphur!",
+		"exits": [{
+			"exit": "GLOWING DOOR",
+			"target": "DUNGE"
+		}],
 		"items":[]
 	},
 	"LROOM": {
